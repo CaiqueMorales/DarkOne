@@ -211,6 +211,7 @@ footer{
     background-repeat: no-repeat;
     background-size: 100% 50%;
     background-position: bottom;
+    margin-top: 0;
 }  
 
 .home-img{
@@ -439,25 +440,32 @@ footer{
     display: grid;
     grid-template-columns: 1fr;
     gap: 2em;
-    width: 100%;
 }
 
 .sign-up > * {
     border-radius: 5em;
     padding: 1em;
+    word-wrap: break-word;
+    margin-inline: auto;
+    width: 100%;
 }
 
 .sign-up-btn{
-    display: flex;
-    flex-wrap: wrap;
     padding-block: .9em;
-    max-width: 100%;
     background: linear-gradient(to right ,hsl(176, 68%, 64%), hsl(198, 60%, 50%));
     color: #fff;
     font-weight: var(--fw-bold);
     border-radius: 2em;
     border: none;
     cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+    
+    .sign-up > *{
+        /* width: 80%; */
+    }
+
 }
 
 @media screen and (min-width: 769px){
